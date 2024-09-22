@@ -15,8 +15,11 @@ body {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 60px;
     margin-bottom: 20px;
+    color: #FFD700; /* Kirkkaankeltainen */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Tekstin varjoefekti */
+    font-family: 'Arial Black', sans-serif; /* Lihavoitu ja erottuva fontti */
 }
 
 .content {
@@ -41,6 +44,10 @@ ul {
     list-style-type: none;
     padding: 0;
     font-size: 18px;
+}
+
+ul li {
+    margin-bottom: 10px;
 }
 
 ul li {
