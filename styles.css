@@ -33,6 +33,7 @@ h1 {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
+    text-align: left; /* Kohdistetaan tekstit vasemmalle */
 }
 
 h2 {
@@ -41,13 +42,22 @@ h2 {
 }
 
 ul {
-    list-style-type: none;
+    list-style: none; /* Poistetaan oletusluettelomerkit */
     padding: 0;
     font-size: 18px;
 }
 
 ul li {
     margin-bottom: 10px;
+    display: flex;
+    align-items: center; /* Kohdistetaan teksti keskelle */
+}
+
+ul li::before {
+    content: "•"; /* Luodaan mukautettu luettelomerkki */
+    color: #FFD700; /* Keltainen luettelomerkki */
+    font-size: 24px; /* Isompi koko luettelomerkille */
+    margin-right: 10px; /* Etäisyys merkin ja tekstin välillä */
 }
 
 ul li {
