@@ -17,9 +17,9 @@ body {
 h1 {
     font-size: 60px;
     margin-bottom: 20px;
-    color: #FFD700; /* Kirkkaankeltainen */
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Tekstin varjoefekti */
-    font-family: 'Arial Black', sans-serif; /* Lihavoitu ja erottuva fontti */
+    color: #FFD700;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+    font-family: 'Arial Black', sans-serif;
 }
 
 /* Grid-layout tekstikentille ja kuville */
@@ -39,21 +39,22 @@ h1 {
     color: white;
 }
 
-/* Kuvat asettuvat tekstikenttien väliin */
+/* Kuvagalleria tekstikenttien yläpuolella */
 .image-gallery {
-    grid-column: 1 / span 2; /* Kuvat vievät koko leveydeltä keskikentän alla */
+    grid-column: 1 / span 2; /* Kuvat vievät koko leveyden */
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin-bottom: 20px;
 }
 
 .image-gallery img {
-    width: 300px; /* Kiinteä leveys */
-    height: 210px; /* Kiinteä korkeus */
-    object-fit: cover; /* Säilyttää kuvasuhteen ja täyttää laatikon */
-    border-radius: 10px; /* Pyöristetyt reunat */
-    border: 3px solid #FFD700; /* Keltainen reunus */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Kuvan varjostus */
+    width: 300px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #FFD700;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
@@ -62,33 +63,33 @@ h2 {
 }
 
 ul {
-    list-style: none; /* Poistetaan oletusluettelomerkit */
+    list-style: none;
     padding: 0;
     font-size: 18px;
 }
 
 ul li {
-    line-height: 1.6; /* Riviväliä kasvatetaan */
-    text-align: left; /* Varmistetaan, että teksti on tasattu vasemmalle */
+    line-height: 1.6;
+    text-align: left;
     margin-bottom: 10px;
     display: flex;
-    align-items: center; /* Kohdistetaan teksti keskelle */
+    align-items: center;
 }
 
 ul li::before {
-    content: "•"; /* Luodaan mukautettu luettelomerkki */
-    color: #FFD700; /* Keltainen luettelomerkki */
-    font-size: 24px; /* Isompi koko luettelomerkille */
-    margin-right: 10px; /* Etäisyys merkin ja tekstin välillä */
+    content: "•";
+    color: #FFD700;
+    font-size: 24px;
+    margin-right: 10px;
 }
 
 /* Pienemmille näytöille */
 @media (max-width: 768px) {
     .grid-container {
-        grid-template-columns: 1fr; /* Muutetaan yhdeksi sarakkeeksi pienillä näytöillä */
+        grid-template-columns: 1fr;
     }
 
     .image-gallery {
-        flex-direction: column; /* Asetellaan kuvat päällekkäin */
+        flex-direction: column;
     }
 }
