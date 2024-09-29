@@ -68,6 +68,8 @@ ul {
 }
 
 ul li {
+    line-height: 1.6; /* Riviväliä kasvatetaan */
+    text-align: left; /* Varmistetaan, että teksti on tasattu vasemmalle */
     margin-bottom: 10px;
     display: flex;
     align-items: center; /* Kohdistetaan teksti keskelle */
