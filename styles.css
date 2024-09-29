@@ -48,8 +48,8 @@ h1 {
 }
 
 .image-gallery img {
-    width: 200px; /* Kiinteä leveys */
-    height: 150px; /* Kiinteä korkeus */
+    width: 250px; /* Kiinteä leveys */
+    height: 187px; /* Kiinteä korkeus */
     object-fit: cover; /* Säilyttää kuvasuhteen ja täyttää laatikon */
     border-radius: 10px; /* Pyöristetyt reunat */
     border: 3px solid #FFD700; /* Keltainen reunus */
